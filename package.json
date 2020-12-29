@@ -1,0 +1,25 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Restaurant page with vanilla Js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriellima77/restaurant-page.git"
+  },
+  "keywords": [],
+  "author": "Gabriel Lima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabriellima77/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/gabriellima77/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0"
+  }
+}
