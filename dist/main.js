@@ -1,1 +1,1 @@
-alert("Hello World!");
+(()=>{"use strict";const e=function(){const e=document.createElement("header"),n=document.createElement("h1");return n.textContent="My Logo",{makeNaveBar:()=>{const t=document.createElement("nav");t.id="nav-bar",["About","Menu","Contact"].forEach((e=>{const n=document.createElement("div");n.classList.add("option"),n.innerHTML=`<span class="border"></span> ${e}`,t.appendChild(n)}));const a={h1:n,nav:t};for(let n in a)e.appendChild(a[n]);return e}}}();document.querySelector("#content").appendChild(e.makeNaveBar())})();
