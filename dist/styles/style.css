@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
 * {
     box-sizing: border-box;
     font-size: 16px;
@@ -6,6 +10,17 @@
 body {
     margin: 0;
     padding: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    width: 21%;
 }
 
 header {
@@ -21,10 +36,11 @@ header {
 }
 
 h1 {
-    color: rgb(156, 100, 220);
-    text-shadow: 2px 2px 3px  white;
+    color: white;
+    text-shadow: 4px 4px 3px  rgb(156, 100, 220);
     font-size: 2rem;
     margin-left: 8%;
+    font-family: 'Major Mono Display', monospace;
 }
 
 #nav-bar {
@@ -37,6 +53,7 @@ h1 {
 
 .option {
     font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
     color: white;
     display: flex;
     align-items: center;
@@ -65,9 +82,10 @@ h1 {
     color: rgb(156, 100, 220);
 }
 
-#hero-img {
+#main-content {
     position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 11vh;
@@ -76,6 +94,7 @@ h1 {
     background: url("../img/hero-img.jpg");
     background-position: center;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #cover {
@@ -89,4 +108,16 @@ h1 {
     z-index: 1;
     color: white;
     font-size: 2rem;
+    font-family: 'Lobster', cursive;
+}
+
+.text {
+    text-align: center;
+    z-index: 1;
+    display: block;
+    width: 45%;
+    margin-top: -2%;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
 }
