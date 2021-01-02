@@ -1,22 +1,14 @@
 const about = function() {
 
     const About = ()=> {
-        let para;
-        const main = document.querySelector("main");
-        const children = Array.from(main.children);
-        const hasPara = children.filter(child =>{
-            if(child.id != "cover"){
-                main.removeChild(child);
-            }
-            else if(child.node == "P"){
-                para = child;
-                return true;
-            }
-        })[0];
-        if(!hasPara){
-            para = document.createElement("p")
-            para.classList.add("text");
+        const container = document.querySelector("#content");
+        let para = document.createElement("p");
+        para.classList.add("text");
+        let main = document.querySelector("main");
+        if(document.querySelector("main")){
+            container.removeChild(main);
         }
+        main = document.createElement("main");
         const div = document.createElement("div");
         const h2 = document.createElement("h2");
         h2.id = "main-text";
@@ -31,6 +23,8 @@ const about = function() {
                            " salads.";
         div.appendChild(para);
         main.appendChild(div);
+        container.appendChild(main);
+        window.scrollTo({top: container.clientHeight, left: 0, behavior: "smooth"});
     }
     return {About}
 }

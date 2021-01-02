@@ -1,8 +1,8 @@
 
 class initial{
 
-    get makeMain(){
-        const main = document.createElement("main");
+    get makeHero(){
+        const main = document.createElement("div");
         main.id = "main-content";
         const node = { cover: document.createElement("div"),
                        "main-text":  document.createElement("h2") };

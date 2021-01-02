@@ -8,8 +8,22 @@
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(252, 203, 144);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d57eeb;
 }
 
 #content {
@@ -24,6 +38,7 @@ a {
 }
 
 header {
+    z-index: 2;
     position: fixed;
     top: 0;
     display: flex;
@@ -95,7 +110,7 @@ label p {
 }
 
 #main-content {
-    position: fixed;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,6 +124,13 @@ label p {
     background-repeat: no-repeat;
 }
 
+main {
+    height: 89vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
 
 .box {
     border-radius: 15px;
@@ -120,10 +142,11 @@ label p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 2px 2px 7px 2px #8b5199;
 }
 
-.box h2 {
-    text-shadow: 3px 3px 2px rgb(156, 100, 220);
+.box{
+    text-shadow: -1px 0px 3px black;
 }
 
 .box p {
@@ -171,6 +194,7 @@ label p {
 }
 
 #footer {
+    z-index: 2;
     position: fixed;
     bottom: 0;
     display: flex;

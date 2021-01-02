@@ -2,13 +2,12 @@ const contact = function (){
     
     const Contact = ()=> {
         const contact = {phone: "(55)555-6420", email: "best4eat@potato.com", address: "Area 51, NV, USA"};
-        const main = document.querySelector("main");
-        const children = Array.from(main.children);
-        children.forEach(child =>{
-            if(child.id != "cover"){
-                main.removeChild(child);
-            }
-        });
+        const container = document.querySelector("#content");
+        let main = document.querySelector("main");
+        if(document.querySelector("main")){
+            container.removeChild(main);
+        }
+        main = document.createElement("main");
         const div = document.createElement("div");
         const h2 = document.createElement("h2");
         h2.id = "main-text";
@@ -27,6 +26,8 @@ const contact = function (){
             div.appendChild(block);
         }
         main.appendChild(div);
+        container.appendChild(main);
+        window.scrollTo({top: container.clientHeight, left: 0, behavior: "smooth"});
     }
     return {Contact};
 }

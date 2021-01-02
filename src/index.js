@@ -7,7 +7,7 @@ import {contactEvent} from './contact';
 const page = (function () {
     const content = document.querySelector("#content");
     content.appendChild(webPage.makeNavBar);
-    content.appendChild(webPage.makeMain);
+    content.appendChild(webPage.makeHero);
     const options = document.querySelectorAll(".option");
     const functions = {About: aboutEvent.About, Menu, Contact: contactEvent.Contact};
     options.forEach(label=> {
