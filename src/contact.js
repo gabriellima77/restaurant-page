@@ -1,0 +1,36 @@
+const contact = function (){
+    
+    const Contact = ()=> {
+        const contact = {phone: "(55)555-6420", email: "best4eat@potato.com", address: "Area 51, NV, USA"};
+        const main = document.querySelector("main");
+        const children = Array.from(main.children);
+        children.forEach(child =>{
+            if(child.id != "cover"){
+                main.removeChild(child);
+            }
+        });
+        const div = document.createElement("div");
+        const h2 = document.createElement("h2");
+        h2.id = "main-text";
+        h2.textContent = "Contact";
+        div.appendChild(h2);
+        div.classList = "box";
+        for(let key in contact){
+            let block = document.createElement("div");
+            block.classList.add("contact");
+            let h3 = document.createElement("h3");
+            let para = document.createElement("p");
+            h3.textContent = key + " : ";
+            para.textContent = contact[key];
+            block.appendChild(h3);
+            block.appendChild(para);
+            div.appendChild(block);
+        }
+        main.appendChild(div);
+    }
+    return {Contact};
+}
+
+const contactEvent = contact();
+
+export {contactEvent};

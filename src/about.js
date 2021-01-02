@@ -1,30 +1,20 @@
-class Events {
+const about = function() {
 
-    constructor(){
-        this.main = document.querySelector("main");
-        this.children = Array.from(this.main.children);
-    }
-
-    get hasParagraph() {
-        return this.children.filter(child => {
-            if(child.node == "P"){
-                return child;
+    const About = ()=> {
+        let para;
+        const main = document.querySelector("main");
+        const children = Array.from(main.children);
+        const hasPara = children.filter(child =>{
+            if(child.id != "cover"){
+                main.removeChild(child);
+            }
+            else if(child.node == "P"){
+                para = child;
+                return true;
             }
         })[0];
-    }
-
-    resetMain (){
-        this.children.forEach(child=> {
-            if(child.id != "cover"){
-                this.main.removeChild(child);
-            }
-        })
-    }
-
-    About(){
-        let para = this.hasParagraph;
-        if(!para){
-            para = document.createElement("p");
+        if(!hasPara){
+            para = document.createElement("p")
             para.classList.add("text");
         }
         const div = document.createElement("div");
@@ -40,12 +30,11 @@ class Events {
                            "We also have vegetables and fruits, but we don't want to be boring like a salad, nothing against" +
                            " salads.";
         div.appendChild(para);
-        this.main.appendChild(div);
+        main.appendChild(div);
     }
-
-
+    return {About}
 }
 
-const events = new Events();
+const aboutEvent = about();
 
-export {events};
+export {aboutEvent};
