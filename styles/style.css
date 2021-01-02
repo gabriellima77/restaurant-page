@@ -20,7 +20,7 @@ body {
 
 a {
     text-decoration: none;
-    width: 21%;
+    width: 26%;
 }
 
 header {
@@ -31,7 +31,7 @@ header {
     align-items: center;
     width: 100vw;
     height: 11vh;
-    background-color: rgb(193, 154, 183);
+    background-color: #d57eeb;
     border-bottom: 2px solid white;
 }
 
@@ -54,6 +54,8 @@ h1 {
 .option {
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    border: none;
     color: white;
     display: flex;
     align-items: center;
@@ -61,6 +63,16 @@ h1 {
     cursor: pointer;
     height: 100%;
     width: 32%;
+    transition: all 0.6s;
+    outline: none;
+}
+
+input[type="radio"] {
+    width: 0;
+}
+
+label p {
+    font-size: 1.1rem;
     transition: all 0.6s;
 }
 
@@ -72,14 +84,14 @@ h1 {
     transition: all 0.6s;
 }
 
-.option:hover .border {
+.option:hover .border{
     height: 60%;
-    background-color: rgb(156, 100, 220);
+    background-color: #fccb90 !important;
 }
 
-.option:hover {
-    font-size: 1.6rem;
-    color: rgb(156, 100, 220);
+.option:hover p{
+    font-size: 1.5rem;
+    color: #fccb90;
 }
 
 #main-content {
@@ -95,6 +107,42 @@ h1 {
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+
+.box {
+    border-radius: 15px;
+    z-index: 1;
+    width: 35%;
+    height: 75%;
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h2 {
+    text-shadow: 3px 3px 2px rgb(156, 100, 220);
+}
+
+.box p {
+    padding: 0 15px;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.contact {
+    margin: 0 0 3px 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+    align-self: flex-start;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact p {
+    font-size: 1rem;
 }
 
 #cover {
@@ -115,9 +163,34 @@ h1 {
     text-align: center;
     z-index: 1;
     display: block;
-    width: 45%;
+    width: 100%;
     margin-top: -2%;
     color: white;
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    font-family: 'Lobster', cursive;
+}
+
+#github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#git-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
