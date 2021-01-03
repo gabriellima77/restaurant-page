@@ -84,6 +84,8 @@ h1 {
 
 input[type="radio"] {
     width: 0;
+    height: 0;
+    opacity: 0;
 }
 
 label p {
@@ -125,7 +127,8 @@ label p {
 }
 
 main {
-    height: 89vh;
+    min-height: 89vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,18 +144,93 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-shadow: -1px 0px 3px black;
     align-items: center;
     box-shadow: 2px 2px 7px 2px #8b5199;
-}
-
-.box{
-    text-shadow: -1px 0px 3px black;
 }
 
 .box p {
     padding: 0 15px;
     text-align: justify;
     font-size: 1.3rem;
+}
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    text-shadow: -1px 0px 3px black;
+}
+
+.menu {
+    width: 80%;
+    display: grid;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    margin-bottom: 5%;
+}
+
+.card {
+    border-bottom: 2px solid white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    justify-self: center;
+    width: 70%;
+    height: 150px;
+    left: 0;
+    background-color: rgba(209, 196, 18, 0.5);
+    transition: all 1s;
+}
+
+.card:hover {
+    left: 20px;
+    border-bottom: 2px solid #caa373;
+    box-shadow: 0px 5px 10px 1px #caa373;
+}
+
+.food {
+    margin-left: 7%;
+    border-radius: 50%;
+    border: 5px solid  #8b5199;
+    width: 120px;
+    height: 120px;
+}
+
+.menu-type {
+    font-size: 2rem;
+    width: 55%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 0px 3px 2px #8b5199;
+    transition: all 1s;
+}
+
+.arrow {
+    position: relative;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    border-top: 3px  solid white;
+    border-right: 3px solid white;
+    margin-right: 5%;
+    transition: all 1s;
+}
+
+.card:hover h3{
+    color: #fccb90;
+}
+
+.card:hover .arrow{
+    left: 20px;
+    border-top: 3px  solid #fccb90;
+    border-right: 3px solid #fcb290;
 }
 
 .contact {
