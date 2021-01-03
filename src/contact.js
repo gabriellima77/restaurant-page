@@ -4,7 +4,7 @@ const contact = function (){
         const contact = {phone: "(55)555-6420", email: "best4eat@potato.com", address: "Area 51, NV, USA"};
         const container = document.querySelector("#content");
         let main = document.querySelector("main");
-        if(document.querySelector("main")){
+        if(main){
             container.removeChild(main);
         }
         main = document.createElement("main");
@@ -13,7 +13,7 @@ const contact = function (){
         h2.id = "main-text";
         h2.textContent = "Contact";
         div.appendChild(h2);
-        div.classList = "box";
+        div.classList.add("box");
         for(let key in contact){
             let block = document.createElement("div");
             block.classList.add("contact");

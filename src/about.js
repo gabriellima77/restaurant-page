@@ -5,7 +5,7 @@ const about = function() {
         let para = document.createElement("p");
         para.classList.add("text");
         let main = document.querySelector("main");
-        if(document.querySelector("main")){
+        if(main){
             container.removeChild(main);
         }
         main = document.createElement("main");
@@ -14,7 +14,7 @@ const about = function() {
         h2.id = "main-text";
         h2.textContent = "About";
         div.appendChild(h2);
-        div.classList = "box";
+        div.classList.add("box");
         para.textContent = "We're the best restaurant on galaxy, if you don't belive in us come here to eat." +
                            "We have the best meat in our planet. The meat that we use is made in a 3d printer and" +
                            " our scientists are 100% sure that this don't cause cancer." +
