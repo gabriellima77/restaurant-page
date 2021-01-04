@@ -1,7 +1,7 @@
 const contact = function (){
     
     const Contact = ()=> {
-        const contact = {phone: "(55)555-6420", email: "best4eat@potato.com", address: "Area 51, NV, USA"};
+        const contact = {Phone: "(55) 555-6420", Email: "best4eat@potato.com", Address: "Area 51, NV, USA"};
         const container = document.querySelector("#content");
         let main = document.querySelector("main");
         if(main){
