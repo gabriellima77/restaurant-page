@@ -13,7 +13,7 @@ const page = (function () {
     options.forEach(label=> {
         const key = label.textContent.trim();
         label.children[1].onclick = ()=> {
-            functions[key](label);
+            functions[key]();
             const children = Array.from(label.children);
             const checkBox = children[1];
             const span = children[0];
