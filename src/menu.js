@@ -1,5 +1,4 @@
 class Card {
-
     constructor(type){
         this.type = type;
         this.card = document.createElement("div");
@@ -60,7 +59,11 @@ class Card {
             this.event = this.arrowEvent.bind(this, arrow);
             arrow.addEventListener("click", this.event, true);
         }
-        this.active = false;
+        else {
+            this.active = false;
+            console.log(1);
+        }
+        
     }
 
     putMenu(numberOfPlates, patterSize) {
@@ -90,6 +93,10 @@ class Card {
     }
 
     arrowEvent(arrow) {
+        if(this.active){
+            this.active = false;
+            return;
+        }
         const hasContent = Array.from(this.card.children).filter(child=> {
             if(child.classList.contains("menu-content")){
                 return child;
