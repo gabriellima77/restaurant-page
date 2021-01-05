@@ -372,7 +372,8 @@ main {
     }
 }
 
-@media (min-width: 1442px){
+
+@media (min-width: 1681px) {
     * {
         font-size: 32px;
     }
@@ -382,48 +383,52 @@ main {
         height: 150px;
     }
 
-    .active {
-        height: 60vh;
+    .active h3 {
+        bottom: 40%;
     }
-
 }
 
-@media (min-width: 1439px){
+@media (max-width: 1680px){
+
+
+
     .menu-content {
-        margin-top: 22%;
+        margin-top: 30%;
     }
 }
 
-@media (max-width: 1025px){
+@media (min-width: 1441px){
+    *{
+        font-size: 25px;
+    }
+
+    .active h3 {
+        bottom: 40%;
+    }
+}
+
+@media (min-width: 1025px){
+    .active h3 {
+        bottom: 40%;
+    }
+}
+
+@media (max-width: 1024px){
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
     .menu-content {
         margin-top: 25%;
     }
-}
 
-@media (max-width: 769px){
-
-    label p {
-        font-size: 1rem;
-    }
-
-    .box {
-        width: 70vw;
-    }
-
-    h1 {
-        font-size: 1.4rem;
-    }
-
-    .card {
-        width: 80vw;
-    }
-
-    .active {
-        width: 80vw;
+    .menu-content p {
+        font-size: 1.3rem;
     }
 }
 
-@media (max-width: 426px){
+@media (max-width: 768px){
 
     label p {
         font-size: .7rem;
@@ -469,6 +474,10 @@ main {
         width: 70%;
     }
 
+    h1 {
+        font-size: 1rem;
+    }
+
     label p{
         font-size: .6rem;
     }
@@ -494,6 +503,10 @@ main {
 
     #main-text {
         font-size: 1rem;
+    }
+
+    .menu-content {
+        margin-top: 50%;
     }
 
     h1 { 
