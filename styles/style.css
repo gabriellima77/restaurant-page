@@ -372,41 +372,54 @@ main {
     }
 }
 
-@media (max-width: 321px){
-
-    #main-text {
-        font-size: 1rem;
+@media (min-width: 1442px){
+    * {
+        font-size: 32px;
     }
 
-    h1 { 
-        font-size: 1rem;
+    .food {
+        width: 150px;
+        height: 150px;
+    }
+
+    .active {
+        height: 60vh;
+    }
+
+}
+
+@media (min-width: 1439px){
+    .menu-content {
+        margin-top: 22%;
     }
 }
 
-@media (max-width: 376px) {
-
-    #nav-bar {
-        width: 70%;
+@media (max-width: 1025px){
+    .menu-content {
+        margin-top: 25%;
     }
+}
 
-    label p{
-        font-size: .6rem;
+@media (max-width: 769px){
+
+    label p {
+        font-size: 1rem;
     }
 
     .box {
-        width: 100vw;
+        width: 70vw;
     }
 
-    #main-text {
-        font-size: 1.2rem;
+    h1 {
+        font-size: 1.4rem;
     }
 
-    .menu-content {
-        margin-top: 50%;
+    .card {
+        width: 80vw;
     }
-    
-    .menu-content p {
-        font-size: .8rem;
+
+    .active {
+        width: 80vw;
     }
 }
 
@@ -450,53 +463,51 @@ main {
     }
 }
 
-@media (max-width: 769px){
+@media (max-width: 376px) {
 
-    label p {
-        font-size: 1rem;
+    #nav-bar {
+        width: 70%;
+    }
+
+    label p{
+        font-size: .6rem;
     }
 
     .box {
-        width: 70vw;
+        width: 100vw;
     }
 
-    h1 {
-        font-size: 1.4rem;
+    #main-text {
+        font-size: 1.2rem;
     }
 
-    .card {
-        width: 80vw;
-    }
-
-    .active {
-        width: 80vw;
-    }
-}
-
-@media (max-width: 1025px){
     .menu-content {
-        margin-top: 25%;
+        margin-top: 50%;
+    }
+    
+    .menu-content p {
+        font-size: .8rem;
     }
 }
 
-@media (min-width: 1439px){
-    .menu-content {
-        margin-top: 22%;
+@media (max-width: 321px){
+
+    #main-text {
+        font-size: 1rem;
+    }
+
+    h1 { 
+        font-size: 1rem;
     }
 }
 
-@media (min-width: 1442px){
-    * {
-        font-size: 32px;
-    }
 
-    .food {
-        width: 150px;
-        height: 150px;
-    }
 
-    .active {
-        height: 60vh;
-    }
 
-}
+
+
+
+
+
+
+
