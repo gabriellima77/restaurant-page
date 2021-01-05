@@ -15,7 +15,6 @@ body {
 
 ::-webkit-scrollbar {
     width: 12px;
-    
 }
 
 ::-webkit-scrollbar-track {
@@ -122,7 +121,7 @@ label p {
     height: 89vh;
     background: url("../img/hero-img.jpg");
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -184,7 +183,7 @@ main {
     width: 70%;
     height: 150px;
     top: 0;
-    background-color: rgba(209, 196, 18, .7);
+    background-color: #d57eeb;
     transition: all 1s;
 }
 
@@ -260,7 +259,7 @@ main {
     justify-self: center;
     width: 70%;
     height: 90vh;
-    background-color: rgba(209, 196, 18, .7);
+    background-color: #d57eeb;
     border-bottom: 2px solid #caa373;
     box-shadow: 0px 5px 10px 1px #caa373;
     transition: height .8s;
@@ -306,7 +305,7 @@ main {
 #cover {
     position: absolute;
     width: 100vw;
-    height: 89vh;
+    height: 100%;
     background-color: rgba(11, 113, 137, 0.3);
 }
 
@@ -371,4 +370,133 @@ main {
     100% {
         top: 0;
     }
+}
+
+@media (max-width: 321px){
+
+    #main-text {
+        font-size: 1rem;
+    }
+
+    h1 { 
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 376px) {
+
+    #nav-bar {
+        width: 70%;
+    }
+
+    label p{
+        font-size: .6rem;
+    }
+
+    .box {
+        width: 100vw;
+    }
+
+    #main-text {
+        font-size: 1.2rem;
+    }
+
+    .menu-content {
+        margin-top: 50%;
+    }
+    
+    .menu-content p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 426px){
+
+    label p {
+        font-size: .7rem;
+    }
+
+    .card, .active {
+        width: 90vw;
+    }
+
+    .food {
+        width: 90px;
+        height: 90px;
+    }
+
+    .box p {
+        font-size: 1rem;
+    }
+
+    .menu-type {
+        font-size: 1.3rem;
+    }
+
+    #main-text {
+        font-size: 1.3rem;
+    }
+
+    .menu-content {
+        margin-top: 40%;
+    }
+
+    .menu-content p {
+        font-size: 1rem;
+    }
+
+    #github {
+        width: 50%;
+    }
+}
+
+@media (max-width: 769px){
+
+    label p {
+        font-size: 1rem;
+    }
+
+    .box {
+        width: 70vw;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        width: 80vw;
+    }
+
+    .active {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 1025px){
+    .menu-content {
+        margin-top: 25%;
+    }
+}
+
+@media (min-width: 1439px){
+    .menu-content {
+        margin-top: 22%;
+    }
+}
+
+@media (min-width: 1442px){
+    * {
+        font-size: 32px;
+    }
+
+    .food {
+        width: 150px;
+        height: 150px;
+    }
+
+    .active {
+        height: 60vh;
+    }
+
 }
