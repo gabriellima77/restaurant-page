@@ -443,12 +443,20 @@ main {
         height: 90px;
     }
 
+    .box {
+        width: 80vw;
+    }
+
     .box p {
         font-size: 1rem;
     }
 
     .menu-type {
         font-size: 1.3rem;
+    }
+
+    .active h3 {
+        bottom: 35%;
     }
 
     #main-text {
